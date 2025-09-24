@@ -15,6 +15,16 @@
             autem. Commodi, ullam?</p>
         <p>Changes from Peter</p>
     </div>
+    <form id="nameForm" novalidate>
+        <label for="firstName">First name</label>
+        <input id="firstName" name="firstName" type="text" autocomplete="given-name" required maxlength="40"
+            pattern="[A-Za-zÀ-ž' -]+" placeholder="e.g. Maria" />
+        <label for="lastName">Last name</label>
+        <input id="lastName" name="lastName" type="text" autocomplete="family-name" required maxlength="60"
+            pattern="[A-Za-zÀ-ž' -]+" placeholder="e.g. Ivanova" />
+        <button type="submit">Submit</button>
+        <div class="result" id="result" aria-live="polite" style="display:none"></div>
+    </form>
 </body>
 
 </html>
